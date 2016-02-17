@@ -26,7 +26,7 @@ public class App
         	Elements capsalera = files.get(i).select("th");
         	Elements celes = files.get(i).select("td");
         	
-        	escriure.write("INSERT INTO colors (nom, colorhex, red, green, blue) VALUES (“"+capsalera.text()+"”, “"+celes.get(1).text()+"”, "+celes.get(2).text()+","+celes.get(3).text()+","+celes.get(4).text()+");\n");
+        	escriure.write("INSERT INTO colors (nom, colorhex, red, green, blue) VALUES (\""+capsalera.text()+"\", \""+celes.get(1).text()+"\", \""+celes.get(2).text()+"\", \""+celes.get(3).text()+"\",\""+celes.get(4).text()+"\");\n");
         }
         escriure.close();
     }
